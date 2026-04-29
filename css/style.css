@@ -114,10 +114,21 @@ header > nav > ul > li:nth-child(5) > a.nav-link {  /* Профиль */
     width: 8.54%;
 }
 main{
-    width: 100%;
+       width: 100%;
+    min-height: 100vh;          /* гарантирует, что фон покроет всю высоту экрана */
     height: auto;
+    overflow-x: hidden;
+    background-image: url("../img/fon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;   /* центрирование изображения */
+    background-size: cover;               /* масштабирует картинку, покрывая всю область без искажений */
+    background-attachment: scroll;        /* стандартное поведение (можно заменить на fixed для параллакс-эффекта) */
+    background-color: #f0f0f0;  
 }
-
+.main-lenta{
+    width: 100%;
+   
+}
 
 /* Страница Входа */
 .forma{
@@ -132,6 +143,7 @@ main{
     border-radius: 50px;
     margin: auto;
     color: #95ABDB;
+    margin-top: 150px;
 }
 .qrcode{
     width: 50%;
@@ -260,7 +272,7 @@ main{
 
 /* Лента */
 .lenta{
-    width: 100%;
+    width: 90%;
     height: auto;
     flex-direction: column;
     align-items: center;
@@ -270,9 +282,34 @@ main{
     box-sizing: border-box;
     border-radius: 20px;
     margin: auto;
+    margin-top: 50px;
+}
+.stroka1{
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 61px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto;
+}
+.stroka3{
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto;
 }
 #img{
-    margin-right:15px;
+    /* margin-right:15px; */
     flex-direction: row;
     align-items: center;
     padding: 10px;
@@ -285,7 +322,7 @@ main{
     border-radius: 20px;
 }
 #img2{
-    margin-right:15px;
+    /* margin-right:15px; */
     flex-direction: row;
     align-items: center;
     padding: 10px;
@@ -310,7 +347,7 @@ main{
     border-radius: 20px;
 }
 #img6{
-    margin-right:15px;
+    /* margin-right:15px; */
     flex-direction: row;
     align-items: center;
     padding: 10px;
@@ -319,11 +356,11 @@ main{
     height: 476px;
     background: #C7B5D8;
     border: 1px solid #6B587C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px #6B587C;
     border-radius: 20px;
 }
 #img7{
-    margin-right: 15px;
+    /* margin-right: 15px; */
     flex-direction: row;
     align-items: center;
     padding: 10px;
@@ -332,7 +369,7 @@ main{
     height: 476px;
     background: #C7B5D8;
     border: 1px solid #6B587C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px #6B587C;
     border-radius: 20px;
 }
 #img8{
@@ -344,7 +381,7 @@ main{
     height: 476px;
     background: #C7B5D8;
     border: 1px solid #6B587C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px #6B587C;
     border-radius: 20px;
 }
 .stroka2{
@@ -354,7 +391,7 @@ main{
     align-items: center;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 133px;
     box-sizing: border-box;
     border-radius: 20px;
     margin: auto;
@@ -362,7 +399,7 @@ main{
 .stroka2>.stroka21{
     background: #C7B5D8;
     border: 1px solid #6B587C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px #6B587C;
     border-radius: 20px;
     width: 541px;
     height: 400px;
@@ -393,7 +430,7 @@ main{
 .stroka2>.stroka22{
     background: #C7B5D8;
     border: 1px solid #6B587C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px #6B587C;
     border-radius: 20px;
     width: 541px;
     height: 400px;
