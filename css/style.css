@@ -459,3 +459,636 @@ main{
     height: 285px;
     
 }
+
+footer{
+    width: 100%;
+    height: 97px;
+    background-color: #A5B8E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer > ul{
+    display: flex;
+    gap: 0px; 
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.footer > ul > li{
+    list-style-type: none;
+}
+.footer > ul > li > a{
+    color: rgba(255, 255, 255, 0.783);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 32px;
+}
+.footer > ul > li > a:hover{
+    color: rgb(255, 255, 255);
+}
+.vetka{
+   width: 217px;
+   height: 28px; 
+   display: flex;
+   align-items: center;
+}
+.photouser{
+    border: 1px solid #B18DD2;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.250);
+    position: absolute;
+    top: 248px;
+    left: 163px;
+    z-index: 1;
+
+}
+#elf{
+    width: 290px;
+    height: 390px;
+}
+
+.hat{
+    position: absolute;
+    top: 230px;
+    left: 65px;
+    z-index: 2;
+}
+
+#hat{
+    width: 141px;
+    height: 178px;
+}
+
+.nameuser{
+    display: flex;
+    width: 183px;
+    height: 58px;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0;
+    justify-content: center;
+    position: absolute;
+    top: 650px;
+    left: 218px;
+}
+#fio{
+    font-size: 24px;
+    color: #B18DD2;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 3px;
+    padding: 0px;
+}
+#login{
+    font-size: 24px;
+    color: #b18dd2c0;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.info{
+    border: 1px solid #B18DD2;
+    width: 631px;
+    height: 570px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    position:absolute;
+    top: 248px;
+    left: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.250);
+}
+.info > p{
+    font-size: 24px;
+    color: #B18DD2;
+    text-align: left;
+    margin-left: 28px;
+}
+.o-sebe{
+    border: 1px solid #B18DD2;
+    width: 91%;
+    height: 150px;
+    display: flex;
+    justify-content: left;
+    margin-left: 28px;
+    border-radius: 10px;
+    background-color: white;
+}
+.o-sebe > p{
+    font-size: 20px;
+    color: #b18dd2b1;
+    text-align: left;
+    margin-left: 23px;
+}
+.osnovnaya-info{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.dr{
+   display: flex;
+   flex-direction: row; 
+}
+.zagolovok{
+   font-size: 24px;
+   color: #B18DD2;
+   text-align: left;
+   margin-left: 28px;
+}
+.znachenie{
+   font-size: 20px;
+   color: #b18dd29e;
+   text-align: left;
+   margin-left: 3px;
+   padding-top: 8px;
+}
+.city{
+   display: flex;
+   flex-direction: row; 
+}
+#statistika{
+    width: 670px;
+    height: 157px;
+    z-index: 3;
+    position: absolute;
+    top: 300px;
+    right: -10px;
+}
+.numbers{
+   display: flex;
+   flex-direction: row; 
+   gap: 60px;
+   z-index: 4;
+   position: absolute;
+   top: 280px;
+   left: 0px;
+}
+.numbers > p{
+   font-size: 40px;
+   color: #b18dd2;
+   text-align: center;
+   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.250);
+   margin-left: 100px;
+   margin-bottom: 20px;
+}
+.poyasnenie{
+   display: flex;
+   flex-direction: row; 
+   gap: 80px;
+   z-index: 4;
+   position: absolute;
+   top: 335px;
+   left: 0px; 
+}
+.poyasnenie > p{
+   font-size: 22px;
+   color: #b18dd2;
+   text-align: center;
+   margin-left: 70px;
+   margin-bottom: 20px;
+}
+.niz{
+   display: flex;
+   flex-direction: row; 
+   gap: 80px;
+   z-index: 4;
+   position: absolute;
+   top: 370px;
+   left: 0px;  
+}
+.niz > p{
+   display: flex;
+   flex-direction: row; 
+   z-index: 4;
+   font-size: 20px;
+   color: #b18dd2bd;
+   position: absolute;
+   top: 130px;
+   left: 30px;
+}
+.niz > img{
+   width: 12px;
+   height: 13px;
+   position: absolute;
+   top: 157px;
+   left: 130px;
+}
+.niz > button{
+   color: rgba(255, 255, 255, 0.874);
+   background-color: #B18DD2;
+   border-radius: 10px;
+   border-style: none;
+   position: absolute;
+   padding: 10px 20px;
+   font-size: 20px;
+   font-family: inherit;
+   position: absolute;
+   top: 140px;
+   left: 435px;
+   transform: scale(1);
+   transition: transform 0.3s ease;
+}
+.niz > button:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+}
+.pervaya-column{
+    display: flex;
+    flex-direction: column;
+}
+.friends{
+    border: 1px solid #95ABDB;
+    background-color: white;
+    width: 300px;
+    height: 219px;
+    display: flex;
+    justify-content: left;
+    position:absolute;
+    top: 750px;
+    left: 163px;
+    border-radius: 20px;
+}
+.shapka{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.zagolovok1{
+   font-size: 24px;
+   color: #95ABDB;
+   text-align: left;
+   margin-left: 28px;
+}
+.znachenie1{
+   font-size: 24px;
+   color: #95abdbc5;
+   text-align: left;
+   margin-left: 3px;
+}
+.avatars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 80px;
+    left: 37px;
+}
+.avatars > img{
+    width: 70px;
+    height: 68px;
+}
+.niz2{
+   display: flex;
+   flex-direction: row; 
+   z-index: 4;
+   font-size: 20px;
+   color: #95ABDB;
+   position: absolute;
+   top: 157px;
+   left: 15px;
+}
+.niz2 > img{
+   width: 12px;
+   height: 13px;
+   position: absolute;
+   top: 27px;
+   left: 100px;
+}
+.new-post{
+    border: 1px solid #95ABDB;
+    background-color: white;
+    width: 300px;
+    height: 407px;
+    display: flex;
+    justify-content: left;
+    position:absolute;
+    top: 1005px;
+    left: 163px;
+    border-radius: 20px;
+}
+.zagolovok2{
+   font-size: 24px;
+   color: #95ABDB;
+   text-align: left;
+   margin-left: 28px;
+   margin-bottom: 0px;
+}
+.znachenie2{
+   font-size: 20px;
+   color: #95abdbc5;
+   text-align: left;
+   margin-left: 28px;
+   margin-top: 10px;
+}
+.shapka1{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.niz3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 360px;
+    left: 25px;
+}
+.niz3 > img{
+    width: 26px;
+    height: 22px;
+}
+.niz3 > button{
+   color: rgba(255, 255, 255, 0.874);
+   background-color: #95ABDB;
+   border-radius: 10px;
+   border-style: none;
+   position: absolute;
+   padding: 8px 18px;
+   font-size: 18px;
+   font-family: inherit;
+   position: absolute;
+   top: -8px;
+   left: 120px;
+   transform: scale(1);
+   transition: transform 0.3s ease;
+}
+.niz3 > button:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+}
+.vtoraya-column{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #B18DD2;
+    background-color: white;
+    width: 631px;
+    height: 563px;
+    justify-content: left;
+    position:absolute;
+    top: 850px;
+    left: 500px;
+    border-radius: 20px;
+}
+.shapka2{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.znachenie3{
+   font-size: 24px;
+   color: #b18dd29e;
+   text-align: left;
+   margin-left: 3px;
+}
+.photo-1{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 30px;
+    gap: 20px;
+    top: 70px;
+}
+.photo-1 > img{
+    width: auto;
+    height: 230px;
+}
+.photo-2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 30px;
+    gap: 20px;
+    top: 320px;
+}
+.photo-2 > img{
+    width: auto;
+    height: 195px;
+}
+.niz4{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 350px;
+    left: 25px;
+}
+.niz4 > img{
+    width: 10px;
+    height: 9px;
+    position: absolute;
+    top: 184px;
+    left: 100px;
+}
+.niz4 > p{
+   display: flex;
+   flex-direction: row; 
+   z-index: 4;
+   font-size: 20px;
+   color: #95ABDB;
+   position: absolute;
+   top: 155px;
+   left: 0px;
+}
+.chats{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #95ABDB;
+    background-color: white;
+    width: 80%;
+    height: 646px;
+    justify-content: left;
+    position:absolute;
+    top: 202px;
+    left: 191px;
+    border-radius: 20px;
+}
+
+.zagolovok3{
+   font-size: 24px;
+   color: #95ABDB;
+   text-align: left;
+   margin-left: 40px;
+   margin-bottom: 0px;
+}
+
+.shapka3{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 30px;
+    left: 860px;
+    gap: 20px;
+}
+.shapka3 > p{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 850px;
+}
+.shapka3 > img{
+    display: flex;
+    flex-direction: row;
+    width: 32px;
+    height: 34px;
+}
+.first-column{
+    display: flex;
+    flex-direction: column;
+}
+.messages{
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    background-color: #E3D9ED;
+    width: 200px;
+    height: 150px;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: left;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+}
+.messages > p{
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 20px;
+    margin: 10px;
+}
+.messages > .vse{
+    color: rgb(255, 255, 255); 
+}
+
+.calls{
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    background-color: #E3D9ED;
+    width: 200px;
+    height: 310px;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: left;
+    position: absolute;
+    top: 270px;
+    left: 30px;
+}
+.calls > p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.spisok{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+}
+.recently{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.recently > p{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.735);
+    margin: 10px;
+    margin-left: 20px;
+}
+.recently > img{
+    width: 22px;
+    height: 22px;
+}
+.second-column{
+    display: flex;
+    flex-direction: column;
+}
+.poisk{
+    display: flex;
+    flex-direction: row;
+    border-style: none;
+    background-color: #95abdb8e;
+    width: 676px;
+    height: 57px;
+    justify-content: left;
+    border-radius: 20px;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    left: 270px;
+}
+.poisk > img{
+    width: 14px;
+    height: 29px;
+    display: flex;
+    position: absolute;
+    left: 40px;
+}
+.poisk > p{
+    color: white;
+    font-size: 24px;
+    display: flex;
+    position: absolute;
+    left: 65px;
+}
+.chats-friends{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #95ABDB;
+    width: 676px;
+    height: 400px;
+    justify-content: left;
+    border-radius: 20px;
+    position: absolute;
+    top: 185px;
+    left: 270px;
+}
+.person{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 20px;
+}
+.fio > p{
+    font-size: 20px;
+    color: #95ABDB;
+    margin:0;
+}
+.person > img{
+    width: 78px;
+    height: 79px;
+    display: flex;
+}
+#knopka{
+    width: 27px;
+    height: 32px;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 620px;
+}
+#line{
+    width: 600px;
+    height: 1px;
+    display: flex;
+    position: absolute;
+    left: 40px;
+    top: 100px;
+}
+#message{
+    color: #95abdb8b;
+    margin-top:10px;
+}
