@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <h3>ELFY</h3>
+                <img src="./img/logo.svg" alt="" width="86px" height="52px">
+                <li>
+                    <a class="nav-link active" href="">Главная страница</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="">Чаты</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="">Профиль</a>
+                </li>
+                <img src="./img/account.png" id="account" width="70px" height="70px">
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="./img/vetka.svg" alt="">
+        <section>
+            <div class="formaForRegistration">
+                <div class="registr">
+                    <h3>Регистрация</h3>
+                    <form>
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Фамилия">
+                        <p>Дата Рождения</p>
+                        <div class="birth">
+                            <select id="days"><option value="" disabled selected>День</option></select>
+                            <select id="months"><option value="" disabled selected>Месяц</option></select>
+                            <select id="years"><option value="" disabled selected>Год</option></select>
+                        </div>
+                        <input type="text" placeholder="Логин, почта или номер телефона">
+                        <input type="password" placeholder="Пароль">
+                        <input type="password" placeholder="Повтор пароля">
+                        <label><input type="checkbox" name="terms" required>Даю согласие на обработку персональных данных</label>
+                        <button onclick="window.location.href = 'index.html'" id="butn">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <img src="./img/vetka.svg" id="vector17" alt="">
+    </main>
+        
+    <!-- <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./lenta.html">Главная страница</a>
+                </li>
+                <li>
+                    <a href="./chats.html">Чаты</a>
+                </li>
+                <li>
+                    <a href="./profile.html">Профиль</a>
+                </li>
+            </ul>
+        </nav>
+    </footer> -->
+</body>
+</html>
