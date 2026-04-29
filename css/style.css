@@ -56,7 +56,6 @@ header>nav>ul>img{
     /* display: flex;
     align-items: center; */
 }
-
 #account{
     position: absolute;
     width: 70px;
@@ -64,7 +63,6 @@ header>nav>ul>img{
     left: 91.4%;
     top: 42px;
 }
-
 header>nav > ul >li>a{
     color: rgba(255, 255, 255, 0.75);/*изменить цвет текста*/
     font-size: 25px;
@@ -72,7 +70,6 @@ header>nav > ul >li>a{
     /* justify-content: center; */
     text-align: center;
 }
-
 header>nav > ul >li>a.nav-link.active{
     color: rgba(255, 255, 255, 0.75);/*изменить цвет текста*/
     text-decoration: none;/*убирает подчеркивания*/
@@ -89,7 +86,6 @@ header>nav > ul >li>a.nav-link:hover{
     color: rgba(177, 141, 210, 0.75);
     transition: transform 0.25s ease forwards; /*плавност при изменении*/
 }
-
 header > nav > ul > li > a.nav-link {
     position: absolute;
     top: 61px;
@@ -105,7 +101,6 @@ header > nav > ul > li > a.nav-link {
     text-decoration: none;
     transition: all 0.3s ease;
 }
-
 header > nav > ul > li:nth-child(3) > a.nav-link {  /* Главная страница */
     left: 55%;
     width: 13.64%;
@@ -122,6 +117,9 @@ main{
     width: 100%;
     height: auto;
 }
+
+
+/* Страница Входа */
 .forma{
     width: 75%;
     height: 80%;
@@ -135,8 +133,6 @@ main{
     margin: auto;
     color: #95ABDB;
 }
-
-
 .qrcode{
     width: 50%;
     display: flex;
@@ -157,8 +153,6 @@ main{
 .qrcode>p{
     font-size: 16px;
 }
-
-
 .start{
     width: 50%;
     height: auto;
@@ -207,6 +201,8 @@ main{
 }
 
 
+
+/* Регистрация */
 .formaForRegistration{
     width: 38%;
     height: 70%;
@@ -258,4 +254,170 @@ main{
 #butn:hover{
     color: #ffffff;
     background-color: #b5a4c5;
+}
+
+
+
+/* Лента */
+.lenta{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto;
+}
+#img{
+    margin-right:15px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 261px;
+    height: 261px;
+    background: #C7B5D8;
+    border: 1px solid #6B587C;
+    box-shadow: 0px 4px 4px #6B587C;
+    border-radius: 20px;
+}
+#img2{
+    margin-right:15px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 213px;
+    height: 261px;
+    background: #C7B5D8;
+    border: 1px solid #6B587C;
+    box-shadow: 0px 4px 4px #6B587C;
+    border-radius: 20px;
+}
+#img3{
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 215px;
+    height: 261px;
+    background: #C7B5D8;
+    border: 1px solid #6B587C;
+    box-shadow: 0px 4px 4px #6B587C;
+    border-radius: 20px;
+}
+#img6{
+    margin-right:15px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 324px;
+    height: 476px;
+    background: #C7B5D8;
+    border: 1px solid #6B587C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+#img7{
+    margin-right: 15px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 362px;
+    height: 476px;
+    background: #C7B5D8;
+    border: 1px solid #6B587C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+#img8{
+    /* flex-direction: row; */
+    /* align-items: center; */
+    padding: 10px;
+    gap: 10px;
+    width: 382px;
+    height: 476px;
+    background: #C7B5D8;
+    border: 1px solid #6B587C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.stroka2{
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto;
+}
+.stroka2>.stroka21{
+    background: #C7B5D8;
+    border: 1px solid #6B587C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 541px;
+    height: 400px;
+}
+.stroka2>.stroka21>p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #B18DD2;
+    margin: 0px 15px;
+    padding: 0px;
+}
+.stroka2>.stroka21>#author{
+    font-size: 15px;
+    color: #AAA4AF;
+    margin: -23px 10px;
+    /* padding: 5px; */
+    text-align: right;
+}
+#img4{
+    /* flex-direction: row; */
+    /* align-items: ; */
+    padding: 10px;
+    gap: 10px;
+    width: 521px;
+    height: 285px;
+    
+}
+.stroka2>.stroka22{
+    background: #C7B5D8;
+    border: 1px solid #6B587C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 541px;
+    height: 400px;
+}
+.stroka2>.stroka22>p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #B18DD2;
+    margin: 0px 15px;
+    padding: 0px;
+}
+.stroka2>.stroka22>#author{
+    font-size: 15px;
+    color: #AAA4AF;
+    margin: -23px 10px;
+    /* padding: 5px; */
+    text-align: right;
+}
+#img5{
+    /* flex-direction: row; */
+    /* align-items: ; */
+    padding: 10px;
+    gap: 10px;
+    width: 521px;
+    height: 285px;
+    
 }
