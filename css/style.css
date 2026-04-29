@@ -56,12 +56,13 @@ header>nav>ul>img{
     /* display: flex;
     align-items: center; */
 }
-#account{
+#account {
     position: absolute;
     width: 70px;
     height: 70px;
     left: 91.4%;
     top: 42px;
+    filter: invert(100%);
 }
 header>nav > ul >li>a{
     color: rgba(255, 255, 255, 0.75);/*изменить цвет текста*/
