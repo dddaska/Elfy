@@ -462,7 +462,7 @@ main{
 
 footer{
     width: 100%;
-    height: 97px;
+    height: 10%;
     background-color: #A5B8E0;
     display: flex;
     align-items: center;
@@ -470,9 +470,6 @@ footer{
 }
 .footer > ul{
     display: flex;
-    gap: 0px; 
-    margin: 0;
-    padding: 0;
     justify-content: center;
 }
 .footer > ul > li{
@@ -488,10 +485,8 @@ footer{
     color: rgb(255, 255, 255);
 }
 .vetka{
-   width: 217px;
-   height: 28px; 
-   display: flex;
-   align-items: center;
+   width: 15%;
+   height: 29%; 
 }
 .photouser{
     border: 1px solid #B18DD2;
@@ -904,11 +899,7 @@ footer{
     border: 1px solid #95ABDB;
     background-color: white;
     width: 80%;
-    height: 646px;
-    justify-content: left;
-    position:absolute;
-    top: 202px;
-    left: 191px;
+    height: 63%;
     border-radius: 20px;
 }
 
@@ -917,52 +908,60 @@ footer{
    color: #95ABDB;
    text-align: left;
    margin-left: 40px;
-   margin-bottom: 0px;
 }
 
 .shapka3{
+    width: 100%;
+    height: 10%;
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 30px;
-    left: 860px;
+    align-items: center;
+}
+.elements{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding-right: 40px;
     gap: 20px;
 }
-.shapka3 > p{
-    margin-top: 0px;
+.elements> img{
     display: flex;
     flex-direction: row;
-    position: absolute;
-    right: 850px;
+    width: 3%;
+    height: 54%;
 }
-.shapka3 > img{
+.first-stroka{
     display: flex;
     flex-direction: row;
-    width: 32px;
-    height: 34px;
+    gap: 21px;
+    justify-content: center;
+    padding-bottom: 41px;
 }
 .first-column{
+    width: 21%;
+    height: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 25px;
 }
 .messages{
     display: flex;
     flex-direction: column;
     border-style: none;
     background-color: #E3D9ED;
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 23%;
     justify-content: center;
     border-radius: 20px;
-    align-items: left;
-    position: absolute;
-    top: 90px;
-    left: 30px;
 }
 .messages > p{
     color: rgba(255, 255, 255, 0.733);
     font-size: 20px;
-    margin: 10px;
+    padding-left: 10px;
 }
 .messages > .vse{
     color: rgb(255, 255, 255); 
@@ -973,122 +972,159 @@ footer{
     flex-direction: column;
     border-style: none;
     background-color: #E3D9ED;
-    width: 200px;
-    height: 310px;
+    width: 100%;
+    height: 51%;
     justify-content: center;
     border-radius: 20px;
-    align-items: left;
-    position: absolute;
-    top: 270px;
-    left: 30px;
 }
 .calls > p{
     font-size: 20px;
     color: rgb(255, 255, 255);
-    position: absolute;
-    top: 0px;
-    left: 10px;
+    padding: 0px 10px;
+    margin-bottom: 0;
 }
 .spisok{
+    width: 100%;
+    height: 83%;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 50px;
+    justify-content: left;
 }
 .recently{
+    width: 100%;
+    height: 1%;
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    justify-content: left;
 }
 .recently > p{
     font-size: 18px;
     color: rgba(255, 255, 255, 0.735);
     margin: 10px;
     margin-left: 20px;
+    margin-right: 0;
 }
 .recently > img{
-    width: 22px;
-    height: 22px;
+    width: 9%;
+    height: 88%;
 }
 .second-column{
+    width: 71%;
+    height: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    gap: 18px;
 }
 .poisk{
     display: flex;
     flex-direction: row;
     border-style: none;
     background-color: #95abdb8e;
-    width: 676px;
-    height: 57px;
+    width: 100%;
+    height: 10%;
     justify-content: left;
     border-radius: 20px;
     align-items: center;
-    position: absolute;
-    top: 90px;
-    left: 270px;
 }
-.poisk > img{
-    width: 14px;
-    height: 29px;
+.elements1{
+    margin-left: 40px;
     display: flex;
-    position: absolute;
-    left: 40px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
-.poisk > p{
+.elements1 > img{
+    width: 12%;
+    height: 100%;
+}
+.elements1 > p{
     color: white;
     font-size: 24px;
     display: flex;
-    position: absolute;
-    left: 65px;
 }
 .chats-friends{
     display: flex;
-    flex-direction: column;
     border: 1px solid #95ABDB;
-    width: 676px;
-    height: 400px;
-    justify-content: left;
+    width: 100%;
+    height: 77%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
     border-radius: 20px;
-    position: absolute;
-    top: 185px;
-    left: 270px;
+    padding: 26px 0;
 }
-.person{
+.person1{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    width: 100%;
+    height: 18%;
     align-items: center;
-    padding: 10px 20px;
+}
+.person{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right; 
+    gap: 22px;             
+}
+.fio-column{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 43px;
+}
+.fio-column2{
+    width: 82%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 43px;
 }
 .fio > p{
     font-size: 20px;
     color: #95ABDB;
     margin:0;
+    padding:0;
+}
+.fio{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
 }
 .person > img{
-    width: 78px;
-    height: 79px;
-    display: flex;
+    width: 69%;
+    height: 18%;
 }
-#knopka{
-    width: 27px;
-    height: 32px;
+
+.knopka{
     display: flex;
-    position: absolute;
-    top: 30px;
-    left: 620px;
+    flex-direction: column;
+    width: 13%;
+    height: 100%;
+    justify-content: flex-start;
+}
+.knopka > img{
+    width: 25%;
+    height: 41%;
 }
 #line{
-    width: 600px;
-    height: 1px;
-    display: flex;
-    position: absolute;
-    left: 40px;
-    top: 100px;
+    width: 93%;
+    height: auto;
 }
 #message{
     color: #95abdb8b;
-    margin-top:10px;
+}
+.chats-friends-with-line{
+    display: flex;
+    flex-direction: column;
 }
