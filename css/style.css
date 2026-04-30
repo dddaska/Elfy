@@ -4,6 +4,13 @@ body{
     font-family: 'Ledger', serif;
     background-color: #F8F4FF;
 }
+#bodyprofile{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #F8F4FF;
+}
 header{
     width: 100%;
     /* height: auto; */
@@ -126,6 +133,14 @@ main{
     background-attachment: scroll;        /* стандартное поведение (можно заменить на fixed для параллакс-эффекта) */
     background-color: #f0f0f0;  
 }
+#mainprofile{
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; 
+} 
 .main-lenta{
     width: 100%;
    
@@ -140,7 +155,6 @@ main{
     justify-content: center;
     gap: 20px;
     border: 1px solid #95ABDB;
-    box-sizing: border-box;
     border-radius: 50px;
     margin: auto;
     color: #95ABDB;
