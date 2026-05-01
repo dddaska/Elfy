@@ -126,18 +126,6 @@ header > nav > ul > li:nth-child(5) > a.nav-link {  /* Профиль */
     left: 77%;
     width: 8.54%;
 }
-main{
-       width: 100%;
-    min-height: 100vh;          /* гарантирует, что фон покроет всю высоту экрана */
-    height: auto;
-    overflow-x: hidden;
-    background-image: url("../img/fon.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;   /* центрирование изображения */
-    background-size: cover;               /* масштабирует картинку, покрывая всю область без искажений */
-    background-attachment: scroll;        /* стандартное поведение (можно заменить на fixed для параллакс-эффекта) */
-    background-color: #f0f0f0;  
-}
 #main-profile{
     width: 100%;
     height: 100%;
@@ -152,6 +140,20 @@ main{
     justify-content: center;
     padding: 75px 0;
 }
+
+.main{
+    width: 100%;
+    min-height: 100vh;          /* гарантирует, что фон покроет всю высоту экрана */
+    height: auto;
+    overflow-x: hidden;
+    background-image: url("../img/fon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;   /* центрирование изображения */
+    background-size: cover;               /* масштабирует картинку, покрывая всю область без искажений */
+    background-attachment: scroll;        /* стандартное поведение (можно заменить на fixed для параллакс-эффекта) */
+    background-color: #f0f0f0;  
+}
+
 .main-lenta{
     width: 100%;
    
