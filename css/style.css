@@ -4,12 +4,17 @@ body{
     font-family: 'Ledger', serif;
     background-color: #F8F4FF;
 }
-#bodyprofile{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+#body-profile{
     background-color: #F8F4FF;
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+#body-chats{
+    background-color: #F8F4FF;
+    width: 100%;
+    height: 100%;
+    margin:0;
 }
 header{
     width: 100%;
@@ -133,14 +138,20 @@ main{
     background-attachment: scroll;        /* стандартное поведение (можно заменить на fixed для параллакс-эффекта) */
     background-color: #f0f0f0;  
 }
-#mainprofile{
-    flex: 1;
+#main-profile{
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box; 
-} 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+}
+#main-chats{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+}
 .main-lenta{
     width: 100%;
    
@@ -474,19 +485,6 @@ main{
     
 }
 
-#body-chats{
-    background-color: #F8F4FF;
-    width: 100%;
-    height: 100%;
-    margin:0;
-}
-#main-chats{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 75px 0;
-}
 footer{
     width: 100%;
     height: 10%;
@@ -515,335 +513,432 @@ footer{
    width: 15%;
    height: 29%; 
 }
+.container{
+    width: 92%;
+    height: 73%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+}
+.pervaya-stroka{
+    width: 100%;
+    height: 44%;
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+    align-items: flex-start;
+}
+.avatar{
+    width: 31%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+.avatar-column{
+    display: flex;
+    width: 74%;
+    height: 92%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+}
 .photouser{
     border: 1px solid #B18DD2;
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.250);
-    position: absolute;
-    top: 248px;
-    left: 163px;
+    padding:  3% 3%;
     z-index: 1;
-
 }
+
 #elf{
-    width: 290px;
-    height: 390px;
+    width: 100%;
+    height: 100%;
 }
 
 .hat{
-    position: absolute;
-    top: 230px;
-    left: 65px;
+    width: 36%;
+    height: 36%;
     z-index: 2;
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    top: -3%;
+    right: 64%;
 }
 
 #hat{
-    width: 141px;
-    height: 178px;
+    width: 100%;
+    height: 100%;
 }
 
 .nameuser{
     display: flex;
-    width: 183px;
-    height: 58px;
+    width: 65%;
+    height: 12%;
     flex-direction: column;
-    gap: 0px;
-    padding: 0;
     justify-content: center;
-    position: absolute;
-    top: 650px;
-    left: 218px;
+    gap: 14px;
 }
-#fio{
+.nameuser > p{
     font-size: 24px;
     color: #B18DD2;
     text-align: center;
-    margin-top: 22px;
-    margin-bottom: 3px;
-    padding: 0px;
-}
-#login{
-    font-size: 24px;
-    color: #b18dd2c0;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin:0;
 }
 .info{
     border: 1px solid #B18DD2;
-    width: 631px;
-    height: 570px;
+    width: 64%;
+    height: 88%;
     display: flex;
     justify-content: left;
     flex-direction: column;
-    position:absolute;
-    top: 248px;
-    left: 500px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.250);
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    padding-right: 2.5%;
+    gap: 19px;
 }
 .info > p{
     font-size: 24px;
     color: #B18DD2;
     text-align: left;
-    margin-left: 28px;
+    padding: 0;
+    margin: 0;
 }
 .o-sebe{
     border: 1px solid #B18DD2;
     width: 91%;
-    height: 150px;
+    height: 20%;
     display: flex;
-    justify-content: left;
-    margin-left: 28px;
-    border-radius: 10px;
+    justify-content: flex-start;
+    border-radius: 20px;
     background-color: white;
 }
 .o-sebe > p{
     font-size: 20px;
     color: #b18dd2b1;
     text-align: left;
-    margin-left: 23px;
+    padding: 21px 23px;
+    margin-bottom: 22px;
+    margin-top: 0;
 }
 .osnovnaya-info{
+    width: 91%;
+    height: 6%;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 125px;
+    align-items: center;
 }
 .dr{
    display: flex;
-   flex-direction: row; 
+   flex-direction: row;
+   gap: 10px;
 }
 .zagolovok{
    font-size: 24px;
    color: #B18DD2;
    text-align: left;
-   margin-left: 28px;
+   padding: 0;
+   margin: 0;
 }
 .znachenie{
    font-size: 20px;
    color: #b18dd29e;
    text-align: left;
-   margin-left: 3px;
-   padding-top: 8px;
+   padding: 3px 0;
+   margin: 0;
 }
 .city{
    display: flex;
    flex-direction: row; 
+   gap: 10px;
 }
-#statistika{
-    width: 670px;
-    height: 157px;
+.statistika{
+    width: 102%;
+    height: 38%;
     z-index: 3;
-    position: absolute;
-    top: 300px;
-    right: -10px;
+    position: relative;
 }
+.statistika > img{
+    width: 100%;
+    height: 100%;
+}
+
 .numbers{
-   display: flex;
-   flex-direction: row; 
-   gap: 60px;
-   z-index: 4;
-   position: absolute;
-   top: 280px;
-   left: 0px;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 26%;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    z-index: 4;
 }
 .numbers > p{
-   font-size: 40px;
+   font-size: 35px;
    color: #b18dd2;
    text-align: center;
    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.250);
-   margin-left: 100px;
-   margin-bottom: 20px;
+   margin: 0;
 }
 .poyasnenie{
-   display: flex;
-   flex-direction: row; 
-   gap: 80px;
-   z-index: 4;
-   position: absolute;
-   top: 335px;
-   left: 0px; 
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 23%;
+    position: absolute;
+    top: 30%;
+    z-index: 4;
 }
 .poyasnenie > p{
-   font-size: 22px;
+   font-size: 20px;
    color: #b18dd2;
    text-align: center;
-   margin-left: 70px;
-   margin-bottom: 20px;
+   margin: 0;
 }
 .niz{
-   display: flex;
-   flex-direction: row; 
-   gap: 80px;
-   z-index: 4;
-   position: absolute;
-   top: 370px;
-   left: 0px;  
+    width: 91%;
+    height: 20%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding-bottom: 6%;
+    gap: 10px;
 }
-.niz > p{
-   display: flex;
-   flex-direction: row; 
-   z-index: 4;
+.podrobnee{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row; 
+    align-items: baseline;
+    justify-content: left;
+    gap: 5px;
+}
+.podrobnee > p{
    font-size: 20px;
    color: #b18dd2bd;
-   position: absolute;
-   top: 130px;
-   left: 30px;
+   margin: 0;
+   padding: 0;
 }
-.niz > img{
-   width: 12px;
-   height: 13px;
-   position: absolute;
-   top: 157px;
-   left: 130px;
+.podrobnee > img{
+   width: 3%;
+   height: auto;
 }
-.niz > button{
+.update{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: right;
+}
+.update > button{
    color: rgba(255, 255, 255, 0.874);
    background-color: #B18DD2;
    border-radius: 10px;
    border-style: none;
-   position: absolute;
-   padding: 10px 20px;
+   padding: 5px 26px;
    font-size: 20px;
    font-family: inherit;
-   position: absolute;
-   top: 140px;
-   left: 435px;
    transform: scale(1);
    transition: transform 0.3s ease;
 }
-.niz > button:hover{
+.update > button:hover{
    transform: scale(1.1);
    cursor: pointer;
 }
+.vtoraya-stroka{
+    width: 100%;
+    height: 56%;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    gap: 34px;
+}
 .pervaya-column{
+    width: 31%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    gap: 17px;
 }
 .friends{
     border: 1px solid #95ABDB;
     background-color: white;
-    width: 300px;
-    height: 219px;
+    width: 100%;
+    height: 40%;
     display: flex;
-    justify-content: left;
-    position:absolute;
-    top: 750px;
-    left: 163px;
+    align-items: center;
+    flex-direction: column;
     border-radius: 20px;
 }
 .shapka{
+    width: 100%;
+    height: 15%;
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    justify-content: left;
+    align-items: center;
+    gap: 7px;
 }
 .zagolovok1{
    font-size: 24px;
    color: #95ABDB;
    text-align: left;
-   margin-left: 28px;
+   padding-left: 9%;
+   padding-top: 9%;
+   padding-bottom: 12%;
+   margin: 0;
 }
 .znachenie1{
    font-size: 24px;
    color: #95abdbc5;
    text-align: left;
-   margin-left: 3px;
+   padding-top: 9%;
+   padding-bottom: 12%;
+   margin: 0;
+}
+.stroka-avatar{
+    width: 100%;
+    height: 41%;
+    display: flex;
+    justify-content: center;
 }
 .avatars{
+    width: 75%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    position: absolute;
-    top: 80px;
-    left: 37px;
+    justify-content: center;
+    gap: 7%;
 }
 .avatars > img{
-    width: 70px;
-    height: 68px;
+    width: 33%;
+    height: 100%;
 }
 .niz2{
-   display: flex;
-   flex-direction: row; 
-   z-index: 4;
-   font-size: 20px;
-   color: #95ABDB;
-   position: absolute;
-   top: 157px;
-   left: 15px;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+.niz2 > p{
+    padding-left: 3%;
+    padding-bottom: 5%;
+    padding-top: 13%;
+    font-size: 20px;
+    color: #95ABDB;
+    margin: 0;
 }
 .niz2 > img{
-   width: 12px;
-   height: 13px;
-   position: absolute;
-   top: 27px;
-   left: 100px;
+    width: 3%;
+    height: 100%;
+    padding-bottom: 5%;
+    padding-top: 13%;
 }
 .new-post{
     border: 1px solid #95ABDB;
     background-color: white;
-    width: 300px;
-    height: 407px;
+    width: 100%;
+    height: 59%;
     display: flex;
+    flex-direction: column;
     justify-content: left;
-    position:absolute;
-    top: 1005px;
-    left: 163px;
     border-radius: 20px;
+}
+.shapka1{
+    display: flex;
+    flex-direction: column;
 }
 .zagolovok2{
    font-size: 24px;
    color: #95ABDB;
    text-align: left;
-   margin-left: 28px;
-   margin-bottom: 0px;
+   padding-left: 9%;
+   padding-top: 9%;
+   padding-bottom: 4%;
+   margin: 0;
 }
 .znachenie2{
    font-size: 20px;
    color: #95abdbc5;
    text-align: left;
-   margin-left: 28px;
-   margin-top: 10px;
+   padding-left: 9%;
+   padding-bottom: 44%;
+   margin: 0;
 }
-.shapka1{
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-}
+
 .niz3{
+    width: 100%;
+    height: 10%;
     display: flex;
+    align-items: center;
     flex-direction: row;
-    gap: 10px;
-    position: absolute;
-    top: 360px;
-    left: 25px;
+    padding: 7% 5%;
+    gap: 36px;
 }
-.niz3 > img{
-    width: 26px;
-    height: 22px;
+.niz-icons{
+    width: 39%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
 }
-.niz3 > button{
+#camera{
+    width: 24%;
+    height: 90%;
+}
+#music{
+    width: 16%;
+    height: 85%;
+}
+#screpka{
+    width: 15%;
+    height: 97%;
+}
+.opublicovat{
+   width: 40%;
+   height: 100%;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+}
+.opublicovat > button{
    color: rgba(255, 255, 255, 0.874);
    background-color: #95ABDB;
    border-radius: 10px;
    border-style: none;
    position: absolute;
-   padding: 8px 18px;
+   padding: 6px 15px;
    font-size: 18px;
    font-family: inherit;
-   position: absolute;
-   top: -8px;
-   left: 120px;
    transform: scale(1);
    transition: transform 0.3s ease;
 }
-.niz3 > button:hover{
+.opublicovat > button:hover{
    transform: scale(1.1);
    cursor: pointer;
 }
@@ -852,73 +947,102 @@ footer{
     flex-direction: column;
     border: 1px solid #B18DD2;
     background-color: white;
-    width: 631px;
-    height: 563px;
+    width: 60%;
+    height: 100%;
     justify-content: left;
-    position:absolute;
-    top: 850px;
-    left: 500px;
+    align-items: center;
     border-radius: 20px;
+    padding-top: 2.5%;
+    padding-bottom: 2%;
 }
 .shapka2{
+    width: 95%;
+    height: 4%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
     gap: 5px;
+}
+.zagolovok-photo{
+   font-size: 24px;
+   color: #B18DD2;
+   text-align: left;
+   padding-left: 3%;
+   margin: 0;
 }
 .znachenie3{
    font-size: 24px;
    color: #b18dd29e;
    text-align: left;
-   margin-left: 3px;
+   margin: 0;
+}
+.otdel-photo{
+    width: 100%;
+    height: 81%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 .photo-1{
     display: flex;
     flex-direction: row;
-    position: absolute;
-    left: 30px;
-    gap: 20px;
-    top: 70px;
+    justify-content: center;
+    width: 95%;
+    height: 53%;
+    gap: 19px;
 }
-.photo-1 > img{
-    width: auto;
-    height: 230px;
+#photo1{
+    width: 23%;
+    height: 100%;
+}
+#photo2{
+    width: 31%;
+    height: 100%;
+}
+#photo3{
+    width: 41%;
+    height: 100%;
 }
 .photo-2{
     display: flex;
     flex-direction: row;
-    position: absolute;
-    left: 30px;
-    gap: 20px;
-    top: 320px;
+    justify-content: center;
+    width: 95%;
+    height: 45%;
+    gap: 19px;
 }
-.photo-2 > img{
-    width: auto;
-    height: 195px;
+
+#photo4{
+    width: 23%;
+    height: 100%;
 }
+#photo5{
+    width: 74%;
+    height: 100%;
+}
+
 .niz4{
+    width: 100%;
+    height: 4%;
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    position: absolute;
-    top: 350px;
-    left: 25px;
+    align-items: center;
+    gap: 5px;
+    padding-top: 2%;
 }
 .niz4 > img{
-    width: 10px;
-    height: 9px;
-    position: absolute;
-    top: 184px;
-    left: 100px;
+    width: 1.5%;
+    height: 100%;
 }
 .niz4 > p{
    display: flex;
    flex-direction: row; 
-   z-index: 4;
    font-size: 20px;
    color: #95ABDB;
-   position: absolute;
-   top: 155px;
-   left: 0px;
+   margin: 0;
+   padding-left: 3%;
 }
 .chats{
     display: flex;
@@ -1150,8 +1274,4 @@ footer{
 }
 #message{
     color: #95abdb8b;
-}
-.chats-friends-with-line{
-    display: flex;
-    flex-direction: column;
 }
