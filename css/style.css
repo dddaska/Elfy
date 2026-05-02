@@ -4,13 +4,21 @@ body {
     font-family: 'Ledger', serif;
     background-color: #F8F4FF;
 }
-
-#bodyprofile {
+#bodyprofile{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
     background-color: #F8F4FF;
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+#body-chats{
+    background-color: #F8F4FF;
+    width: 100%;
+    height: 100%;
+    margin:0;
 }
 
 header {
@@ -59,8 +67,6 @@ header>nav>ul>li {
     width: auto;
     height: auto;
     list-style-type: none;
-}
-
 }
 
 header>nav>ul>img {
@@ -125,11 +131,21 @@ header>nav>ul>li>a.nav-link {
     text-decoration: none;
     transition: all 0.3s ease;
 }
-
-
-main {
-    width: 100%;
-    min-height: 100vh;
+header > nav > ul > li:nth-child(3) > a.nav-link {  /* Главная страница */
+    left: 55%;
+    width: 13.64%;
+}
+header > nav > ul > li:nth-child(4) > a.nav-link {  /* Чаты */
+    left: 70%;
+    width: 9%;
+}
+header > nav > ul > li:nth-child(5) > a.nav-link {  /* Профиль */
+    left: 77%;
+    width: 8.54%;
+}
+main{
+       width: 100%;
+    min-height: 100vh;          /* гарантирует, что фон покроет всю высоту экрана */
     height: auto;
     overflow-x: hidden;
     background-image: url("../img/fon.jpg");
@@ -139,17 +155,15 @@ main {
     background-attachment: scroll;
     background-color: #f0f0f0;
 }
-
-#mainprofile {
+#mainprofile{
     flex: 1;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    box-sizing: border-box;
-}
-
-.main-lenta {
+    box-sizing: border-box; 
+} 
+.main-lenta{
     width: 100%;
 
 }
@@ -523,22 +537,20 @@ main {
 
 }
 
-#body-chats {
+#body-chats{
     background-color: #F8F4FF;
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin:0;
 }
-
-#main-chats {
+#main-chats{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     padding: 75px 0;
 }
-
-footer {
+footer{
     width: 100%;
     height: 10%;
     background-color: #A5B8E0;
@@ -566,60 +578,54 @@ footer {
 .footer>ul>li>a:hover {
     color: rgb(255, 255, 255);
 }
-
-.vetka {
-    width: 15%;
-    height: 29%;
+.vetka{
+   width: 15%;
+   height: 29%; 
 }
-
-.photouser {
+.photouser{
     border: 1px solid #B18DD2;
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.250);
-    position: absolute;
-    top: 248px;
-    left: 163px;
+    padding:  3% 3%;
     z-index: 1;
-
 }
-
-#elf {
+#elf{
     width: 290px;
     height: 390px;
 }
 
-.hat {
+.hat{
     position: absolute;
     top: 230px;
     left: 65px;
     z-index: 2;
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    top: -3%;
+    right: 64%;
 }
 
-#hat {
+#hat{
     width: 141px;
     height: 178px;
 }
 
 .nameuser {
     display: flex;
-    width: 183px;
-    height: 58px;
+    width: 65%;
+    height: 12%;
     flex-direction: column;
-    gap: 0px;
-    padding: 0;
     justify-content: center;
-    position: absolute;
-    top: 650px;
-    left: 218px;
+    gap: 14px;
 }
-
-#fio {
+#fio{
     font-size: 24px;
     color: #B18DD2;
     text-align: center;
@@ -627,8 +633,7 @@ footer {
     margin-bottom: 3px;
     padding: 0px;
 }
-
-#login {
+#login{
     font-size: 24px;
     color: #b18dd2c0;
     text-align: center;
@@ -638,33 +643,37 @@ footer {
 
 .info {
     border: 1px solid #B18DD2;
-    width: 631px;
-    height: 570px;
+    width: 64%;
+    height: 88%;
     display: flex;
     justify-content: left;
     flex-direction: column;
-    position: absolute;
+    position:absolute;
     top: 248px;
     left: 500px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.250);
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    padding-right: 2.5%;
+    gap: 19px;
 }
 
 .info>p {
     font-size: 24px;
     color: #B18DD2;
     text-align: left;
-    margin-left: 28px;
+    padding: 0;
+    margin: 0;
 }
 
 .o-sebe {
     border: 1px solid #B18DD2;
     width: 91%;
-    height: 150px;
+    height: 20%;
     display: flex;
-    justify-content: left;
-    margin-left: 28px;
-    border-radius: 10px;
+    justify-content: flex-start;
+    border-radius: 20px;
     background-color: white;
 }
 
@@ -672,276 +681,258 @@ footer {
     font-size: 20px;
     color: #b18dd2b1;
     text-align: left;
-    margin-left: 23px;
+    padding: 21px 23px;
+    margin-bottom: 22px;
+    margin-top: 0;
 }
-
-.osnovnaya-info {
+.osnovnaya-info{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 125px;
+    align-items: center;
 }
-
-.dr {
-    display: flex;
-    flex-direction: row;
+.dr{
+   display: flex;
+   flex-direction: row; 
 }
-
-.zagolovok {
-    font-size: 24px;
-    color: #B18DD2;
-    text-align: left;
-    margin-left: 28px;
+.zagolovok{
+   font-size: 24px;
+   color: #B18DD2;
+   text-align: left;
+   margin-left: 28px;
 }
-
-.znachenie {
-    font-size: 20px;
-    color: #b18dd29e;
-    text-align: left;
-    margin-left: 3px;
-    padding-top: 8px;
+.znachenie{
+   font-size: 20px;
+   color: #b18dd29e;
+   text-align: left;
+   margin-left: 3px;
+   padding-top: 8px;
 }
-
-.city {
-    display: flex;
-    flex-direction: row;
+.city{
+   display: flex;
+   flex-direction: row; 
 }
-
-#statistika {
+#statistika{
     width: 670px;
     height: 157px;
     z-index: 3;
-    position: absolute;
-    top: 300px;
-    right: -10px;
+    position: relative;
 }
-
-.numbers {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    z-index: 4;
-    position: absolute;
-    top: 280px;
-    left: 0px;
+.numbers{
+   display: flex;
+   flex-direction: row; 
+   gap: 60px;
+   z-index: 4;
+   position: absolute;
+   top: 280px;
+   left: 0px;
 }
-
-.numbers>p {
-    font-size: 40px;
-    color: #b18dd2;
-    text-align: center;
-    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.250);
-    margin-left: 100px;
-    margin-bottom: 20px;
+.numbers > p{
+   font-size: 40px;
+   color: #b18dd2;
+   text-align: center;
+   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.250);
+   margin-left: 100px;
+   margin-bottom: 20px;
 }
-
-.poyasnenie {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    z-index: 4;
-    position: absolute;
-    top: 335px;
-    left: 0px;
+.poyasnenie{
+   display: flex;
+   flex-direction: row; 
+   gap: 80px;
+   z-index: 4;
+   position: absolute;
+   top: 335px;
+   left: 0px; 
 }
-
-.poyasnenie>p {
-    font-size: 22px;
-    color: #b18dd2;
-    text-align: center;
-    margin-left: 70px;
-    margin-bottom: 20px;
+.poyasnenie > p{
+   font-size: 22px;
+   color: #b18dd2;
+   text-align: center;
+   margin-left: 70px;
+   margin-bottom: 20px;
 }
-
-.niz {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    z-index: 4;
-    position: absolute;
-    top: 370px;
-    left: 0px;
+.niz{
+   display: flex;
+   flex-direction: row; 
+   gap: 80px;
+   z-index: 4;
+   position: absolute;
+   top: 370px;
+   left: 0px;  
 }
-
-.niz>p {
-    display: flex;
-    flex-direction: row;
-    z-index: 4;
-    font-size: 20px;
-    color: #b18dd2bd;
-    position: absolute;
-    top: 130px;
-    left: 30px;
+.niz > p{
+   display: flex;
+   flex-direction: row; 
+   z-index: 4;
+   font-size: 20px;
+   color: #b18dd2bd;
+   position: absolute;
+   top: 130px;
+   left: 30px;
 }
-
-.niz>img {
-    width: 12px;
-    height: 13px;
-    position: absolute;
-    top: 157px;
-    left: 130px;
+.niz > img{
+   width: 12px;
+   height: 13px;
+   position: absolute;
+   top: 157px;
+   left: 130px;
 }
-
-.niz>button {
-    color: rgba(255, 255, 255, 0.874);
-    background-color: #B18DD2;
-    border-radius: 10px;
-    border-style: none;
-    position: absolute;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-family: inherit;
-    position: absolute;
-    top: 140px;
-    left: 435px;
-    transform: scale(1);
-    transition: transform 0.3s ease;
+.niz > button{
+   color: rgba(255, 255, 255, 0.874);
+   background-color: #B18DD2;
+   border-radius: 10px;
+   border-style: none;
+   position: absolute;
+   padding: 10px 20px;
+   font-size: 20px;
+   font-family: inherit;
+   position: absolute;
+   top: 140px;
+   left: 435px;
+   transform: scale(1);
+   transition: transform 0.3s ease;
 }
-
-.niz>button:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+.niz > button:hover{
+   transform: scale(1.1);
+   cursor: pointer;
 }
-
-.pervaya-column {
+.pervaya-column{
     display: flex;
     flex-direction: column;
+    gap: 17px;
 }
 
 .friends {
     border: 1px solid #95ABDB;
     background-color: white;
-    width: 300px;
-    height: 219px;
+    width: 100%;
+    height: 40%;
     display: flex;
     justify-content: left;
-    position: absolute;
+    position:absolute;
     top: 750px;
     left: 163px;
     border-radius: 20px;
 }
-
-.shapka {
+.shapka{
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    justify-content: left;
+    align-items: center;
+    gap: 7px;
 }
-
-.zagolovok1 {
-    font-size: 24px;
-    color: #95ABDB;
-    text-align: left;
-    margin-left: 28px;
+.zagolovok1{
+   font-size: 24px;
+   color: #95ABDB;
+   text-align: left;
+   margin-left: 28px;
 }
-
-.znachenie1 {
-    font-size: 24px;
-    color: #95abdbc5;
-    text-align: left;
-    margin-left: 3px;
+.znachenie1{
+   font-size: 24px;
+   color: #95abdbc5;
+   text-align: left;
+   margin-left: 3px;
 }
-
-.avatars {
+.avatars{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    position: absolute;
-    top: 80px;
-    left: 37px;
+    justify-content: center;
+    gap: 7%;
 }
-
-.avatars>img {
+.avatars > img{
     width: 70px;
     height: 68px;
 }
-
-.niz2 {
-    display: flex;
-    flex-direction: row;
-    z-index: 4;
-    font-size: 20px;
-    color: #95ABDB;
-    position: absolute;
-    top: 157px;
-    left: 15px;
+.niz2{
+   display: flex;
+   flex-direction: row; 
+   z-index: 4;
+   font-size: 20px;
+   color: #95ABDB;
+   position: absolute;
+   top: 157px;
+   left: 15px;
 }
-
-.niz2>img {
-    width: 12px;
-    height: 13px;
-    position: absolute;
-    top: 27px;
-    left: 100px;
+.niz2 > img{
+   width: 12px;
+   height: 13px;
+   position: absolute;
+   top: 27px;
+   left: 100px;
 }
 
 .new-post {
     border: 1px solid #95ABDB;
     background-color: white;
-    width: 300px;
-    height: 407px;
+    width: 100%;
+    height: 59%;
     display: flex;
+    flex-direction: column;
     justify-content: left;
-    position: absolute;
+    position:absolute;
     top: 1005px;
     left: 163px;
     border-radius: 20px;
 }
-
-.zagolovok2 {
-    font-size: 24px;
-    color: #95ABDB;
-    text-align: left;
-    margin-left: 28px;
-    margin-bottom: 0px;
+.zagolovok2{
+   font-size: 24px;
+   color: #95ABDB;
+   text-align: left;
+   margin-left: 28px;
+   margin-bottom: 0px;
 }
-
-.znachenie2 {
-    font-size: 20px;
-    color: #95abdbc5;
-    text-align: left;
-    margin-left: 28px;
-    margin-top: 10px;
+.znachenie2{
+   font-size: 20px;
+   color: #95abdbc5;
+   text-align: left;
+   margin-left: 28px;
+   margin-top: 10px;
 }
-
-.shapka1 {
+.shapka1{
     display: flex;
-    flex-direction: column;
-    gap: 0px;
-}
-
-.niz3 {
-    display: flex;
+    align-items: center;
     flex-direction: row;
-    gap: 10px;
-    position: absolute;
-    top: 360px;
-    left: 25px;
+    padding: 7% 5%;
+    gap: 36px;
 }
-
-.niz3>img {
+.niz3{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+}
+#camera{
+    width: 24%;
+    height: 90%;
+}
+#music{
+    width: 16%;
+    height: 85%;
+}
+.niz3 > img{
     width: 26px;
     height: 22px;
 }
-
-.niz3>button {
-    color: rgba(255, 255, 255, 0.874);
-    background-color: #95ABDB;
-    border-radius: 10px;
-    border-style: none;
-    position: absolute;
-    padding: 8px 18px;
-    font-size: 18px;
-    font-family: inherit;
-    position: absolute;
-    top: -8px;
-    left: 120px;
-    transform: scale(1);
-    transition: transform 0.3s ease;
+.niz3 > button{
+   color: rgba(255, 255, 255, 0.874);
+   background-color: #95ABDB;
+   border-radius: 10px;
+   border-style: none;
+   position: absolute;
+   padding: 8px 18px;
+   font-size: 18px;
+   font-family: inherit;
+   position: absolute;
+   top: -8px;
+   left: 120px;
+   transform: scale(1);
+   transition: transform 0.3s ease;
 }
-
-.niz3>button:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+.niz3 > button:hover{
+   transform: scale(1.1);
+   cursor: pointer;
 }
 
 .vtoraya-column {
@@ -949,38 +940,43 @@ footer {
     flex-direction: column;
     border: 1px solid #B18DD2;
     background-color: white;
-    width: 631px;
-    height: 563px;
+    width: 60%;
+    height: 100%;
     justify-content: left;
-    position: absolute;
+    position:absolute;
     top: 850px;
     left: 500px;
     border-radius: 20px;
+    padding-top: 2.5%;
+    padding-bottom: 2%;
 }
-
-.shapka2 {
+.shapka2{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
     gap: 5px;
 }
-
-.znachenie3 {
-    font-size: 24px;
-    color: #b18dd29e;
-    text-align: left;
-    margin-left: 3px;
+.znachenie3{
+   font-size: 24px;
+   color: #b18dd29e;
+   text-align: left;
+   margin-left: 3px;
 }
 
 .photo-1 {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    left: 30px;
-    gap: 20px;
-    top: 70px;
+    justify-content: center;
+    width: 95%;
+    height: 53%;
+    gap: 19px;
 }
-
-.photo-1>img {
+#photo1{
+    width: 23%;
+    height: 100%;
+}
+.photo-1 > img{
     width: auto;
     height: 230px;
 }
@@ -988,43 +984,43 @@ footer {
 .photo-2 {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    left: 30px;
-    gap: 20px;
-    top: 320px;
+    justify-content: center;
+    width: 95%;
+    height: 45%;
+    gap: 19px;
 }
 
-.photo-2>img {
+#photo4{
+    width: 23%;
+    height: 100%;
+}
+.photo-2 > img{
     width: auto;
     height: 195px;
 }
-
-.niz4 {
+.niz4{
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    position: absolute;
-    top: 350px;
-    left: 25px;
+    align-items: center;
+    gap: 5px;
+    padding-top: 2%;
 }
-
-.niz4>img {
+.niz4 > img{
     width: 10px;
     height: 9px;
     position: absolute;
     top: 184px;
     left: 100px;
 }
-
-.niz4>p {
-    display: flex;
-    flex-direction: row;
-    z-index: 4;
-    font-size: 20px;
-    color: #95ABDB;
-    position: absolute;
-    top: 155px;
-    left: 0px;
+.niz4 > p{
+   display: flex;
+   flex-direction: row; 
+   z-index: 4;
+   font-size: 20px;
+   color: #95ABDB;
+   position: absolute;
+   top: 155px;
+   left: 0px;
 }
 
 .chats {
@@ -1286,8 +1282,7 @@ footer {
 #message {
     color: #95abdb8b;
 }
-
-.chats-friends-with-line {
+.chats-friends-with-line{
     display: flex;
     flex-direction: column;
 }
