@@ -511,7 +511,11 @@ footer{
 .footer > ul > li > a:hover{
     color: rgb(255, 255, 255);
 }
-.vetka{
+.vetka1{
+   width: 15%;
+   height: 29%; 
+}
+.vetka2 {
    width: 15%;
    height: 29%; 
 }
@@ -1276,4 +1280,234 @@ footer{
 }
 #message{
     color: #95abdb8b;
+}
+
+/* стили под телефон: подвал и чаты*/
+@media (max-width: 425px){
+    footer{
+        width: 100%;
+        height: 10%;
+        background-color: #A5B8E0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer > ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .footer > ul > li{
+        list-style-type: none;
+    }
+    .footer > ul > li > a{
+        color: rgba(255, 255, 255, 0.783);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 16px;
+    }
+    .footer > ul > li > a:hover{
+        color: rgb(255, 255, 255);
+    }
+    .vetka1{
+        width: 25%;
+        height: auto; 
+    }
+    .vetka2{
+        display: none; 
+    }
+    
+    .elements> img{
+        display: flex;
+        flex-direction: row;
+        width: 12%;
+        height: 54%;
+    } 
+    .first-stroka{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 21px;
+    }
+    .first-column{
+        width: 90%;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .messages{
+        display: flex;
+        flex-direction: row;
+        border-style: none;
+        background-color: #E3D9ED;
+        width: 90%;
+        height: 51%;
+        justify-content: center;
+        border-radius: 15px;
+        gap: 15px;
+    }
+    .messages > p{
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 12px;
+    }
+    .messages > .vse{
+        color: rgb(255, 255, 255); 
+    }
+    .calls{
+        display: flex;
+        flex-direction: column;
+        border-style: none;
+        background-color: #E3D9ED;
+        width: 90%;
+        height: 51%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+    }
+    .calls > p{
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+    }
+    .spisok{
+        width: 100%;
+        height: 83%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .recently{
+        width: 100%;
+        height: 1%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .recently > p{
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.735);
+    }
+    .recently > img{
+        width: 8%;
+        height: 88%;
+    }
+    .second-column{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        gap: 18px;
+    }
+    .poisk{
+        display: flex;
+        flex-direction: row;
+        border-style: none;
+        background-color: #95abdb8e;
+        width: 90%;
+        height: 10%;
+        justify-content: left;
+        border-radius: 15px;
+        align-items: center;
+    }
+    .elements1{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+    .elements1 > img{
+        width: 12%;
+        height: 100%;
+    }
+    .elements1 > p{
+        color: white;
+        font-size: 16px;
+    }
+    .chats-friends{
+        display: flex;
+        border: none;
+        width: 90%;
+        height: 77%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 13px 0;
+        gap: 18px;
+    }
+    .person1{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 18%;
+        align-items: center;
+    }
+    .person{
+        width: 18%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: right; 
+        gap: 22px;             
+    }
+    .fio-column{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 43px;
+    }
+    .fio-column2{
+        width: 82%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 43px;
+    }
+    .fio > p{
+        font-size: 16px;
+        color: #95ABDB;
+        margin:0;
+        padding:0;
+    }
+    .fio{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .person > img{
+        width: 69%;
+        height: 18%;
+    }
+
+    .knopka{
+        display: flex;
+        flex-direction: column;
+        width: 13%;
+        height: 100%;
+        justify-content: flex-start;
+    }
+    .knopka > img{
+        width: 40%;
+        height: 41%;
+    }
+    #line{
+        width: 93%;
+        height: auto;
+    }
+    #message{
+        color: #95abdb8b;
+    }
 }
